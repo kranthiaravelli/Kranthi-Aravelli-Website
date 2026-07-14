@@ -1,0 +1,466 @@
+
+
+/* Color Palette */
+/* 
+
+#EAECF0
+#FE7F2D
+#233D4D
+#000000
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: 'Amiro';
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;  
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.518);  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    width: 70px;
+    cursor: pointer;
+}
+
+nav .nav-elements ul {
+    list-style: none;
+}
+
+nav .nav-elements ul li {
+    display: inline-block;
+}
+
+nav .nav-elements li a{
+    padding: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav #menu {
+    width: 40px;
+    display: none;
+}
+
+#highlight {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+#highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(113, 6, 6, 0.126) /* url(bgimage.png) no-repeat */;
+    background-size: cover;
+    background-position-y: -170px;
+    opacity: 1;
+    z-index: -1;
+}
+
+#highlight h2 {
+    font-size: 24px;
+    letter-spacing: -1px;
+    padding-left: 40px;
+    color: black;
+}
+
+.highlight_card {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight_card h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+}
+
+.highlight_card h1 a{
+    color: black;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.highlight_card p {
+    font-size: 14px;
+}
+
+.highlight_card .basic_info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.highlight_card .basic_info button:hover {
+    background-color: rgba(0, 0, 0, 0.872);
+}
+
+.highlight_card .description {
+    font-size: 12px;
+    max-width: 500px;
+    margin-top: 20px;
+    color: black;
+}
+
+.highlight_card .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 0;
+    padding-right: 50px;
+}
+
+.highlight_card .status h1 {
+    font-size: 38px;
+    cursor: pointer;
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+    padding: 30px 90px;
+    padding-top: 50px;
+    background-color: white; 
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.main h1 {
+    font-size: 50px;
+    letter-spacing: -3px;
+}
+
+.main h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+
+#official {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 40px 80px;
+}
+
+.main-wrap {
+    display: flex;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+}
+
+.wrap h2 {
+    font-size: 24px;
+}
+
+.post-container {
+    margin-top: 20px;
+    max-width: 100%;
+    /* background-color: rgba(162, 162, 162, 0.122); */
+    padding: 15px;
+    padding-right: 40px;
+    border-radius: 4px;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.188); */
+}
+
+.information-end {
+    font-size: 10px;
+    margin-top: 10px;
+    color: gray;
+    max-width: 800px;
+    text-align: left;
+}
+
+.post-wrap {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.post-id h3 {
+    font-size: 18px;
+}
+
+.post-id p {
+    font-size: 11px;
+    color: gray;
+}
+
+.post-message .date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+.post-message {
+    margin-top: 8px;
+    max-width: 100%;
+}
+
+.post-message p{
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+
+.main-id {
+    display: flex;
+    gap: 5px;
+}
+
+.post-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-id .post-links {
+    width: fit-content;
+}
+
+.post-links a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.post-links a:hover {
+    color: rgb(0, 72, 255);
+    text-decoration: underline;
+}
+
+.post-id img {
+    width: 13px;
+}
+
+.side-wrap {
+    width: 100%;
+    /* background-color: rgb(224, 224, 224); */
+}
+
+.release-details-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.release-details {
+    margin-top: 20px;
+}
+
+.release-details h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+.release-details button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.866);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.release-details button:hover {
+    background-color: black;
+}
+
+.title-release .release-description {
+    max-width: 700px;
+    white-space: pre-wrap;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.title-release p {
+    font-size: 13px;
+    color: gray;
+}
+
+
+
+.side-inner .release-details-main img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    
+}
+
+.foot img {
+    width: 50px;
+    opacity: 50%;
+}
+
+.foot {
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: black;
+}
+
+.foot p {
+    text-align: right;
+    opacity: 60%;
+}
+
+.alert-message {
+    display: none;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    text-align: center;
+    background-color: red;
+    padding: 3px 0;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 70px;
+}
+
+@media (max-width: 750px) {
+    nav #nav_elements{
+        display: flex;
+    }
+
+    nav .nav-elements ul {
+        margin-top: 200px;
+        background-color: white;
+        width: 100%;
+    }
+
+    nav .nav-elements ul li {
+        display: none;
+    }
+
+    .alert-message {
+        display: block;
+    }
+
+    .highlight_card {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .highlight_card .status {
+        align-items: flex-start;
+    }
+
+    .post-id {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .post-links {
+        display: none;
+    }
+
+    #highlight {
+        padding: 30px 0;
+    }
+
+    #hero {
+        padding: 30px 0;
+    }
+
+    #official {
+        padding: 30px 40px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .foot {
+        flex-direction: column;
+        padding: auto 40px;
+    }
+
+    .foot p {
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1250px) {
+    .main-wrap {
+        flex-direction: column;
+        gap: 70px;
+    }
+}
