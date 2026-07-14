@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans';
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.376);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0 100px;
+}
+
+nav .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .logo a{
+    color: black;
+    text-decoration: none;
+}
+
+nav .logo img {
+    width: 70px;
+}
+
+nav .logo h2 {
+    font-family: 'Google Sans';
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Google Sans';
+}
+
+#chords {
+    padding: 40px 60px;
+}
+
+#chords a svg{
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    transition: .2s ease;
+    color: black;
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -10px;
+}
+
+#chords a svg:hover{
+    transform: translateX(-8px);
+}
+
+#chords h1 {
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.lyrics_chords {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.lyrics_chords .lyric {
+    margin-bottom: 15px;
+}
+
+.lyrics_chords .chords {
+    white-space: pre-wrap;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.song_info {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.song_info a{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.song_info a:hover {
+    text-decoration: underline;
+}
+
+.song_info .key {
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans';
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.376);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0 100px;
+}
+
+nav .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 70px;
+}
+
+nav .logo h2 {
+    font-family: 'Google Sans';
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Google Sans';
+}
+
+#song_chords {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+#song_chords h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+}
+
+.song_list {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.song_list .song_card {
+    border: 1px solid;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song_list .song_card .card_btns {
+    display: flex;
+    gap: 10px;
+}
+
+.song_list .song_card h2 a {
+    width: 100%;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.song_list .song_card:hover h2 {
+    font-weight: 500;
+    transform: translateX(5px);
+}
+
+.song_list .song_card h2{
+    height: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    transition: .2s ease;
+}
+
+.song_list .song_card a button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
