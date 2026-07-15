@@ -82,10 +82,10 @@ nav #menu {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(113, 6, 6, 0.126) /* url(bgimage.png) no-repeat */;
+    background:  url(background_hero.jpg) no-repeat;
     background-size: cover;
     background-position-y: -170px;
-    opacity: 1;
+    opacity: 0.5;
     z-index: -1;
 }
 
@@ -212,7 +212,7 @@ nav #menu {
     margin-top: 20px;
     max-width: 100%;
     /* background-color: rgba(162, 162, 162, 0.122); */
-    padding: 15px;
+    padding: 0px;
     padding-right: 40px;
     border-radius: 4px;
     /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.188); */
@@ -220,7 +220,7 @@ nav #menu {
 
 .information-end {
     font-size: 10px;
-    margin-top: 10px;
+    margin-top: 18px;
     color: gray;
     max-width: 800px;
     text-align: left;
@@ -229,7 +229,7 @@ nav #menu {
 .post-wrap {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+    gap: 20px;
 }
 
 .post-id h3 {
@@ -266,6 +266,18 @@ nav #menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.post-inner-id {
+    display: flex;
+    gap: 10px;
+}
+
+.post-inner-id span {
+    font-size: 10px;
+    margin-top: 5px;
+    color: rgb(0, 72, 255);
+    font-weight: 800;
 }
 
 .post-id .post-links {
@@ -380,14 +392,12 @@ footer {
     display: none;
     width: 100%;
     height: auto;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
-    background-color: red;
+    background-color: rgb(1, 54, 140);
     padding: 3px 0;
     color: white;
     font-weight: 600;
-    position: sticky;
-    top: 70px;
 }
 
 @media (max-width: 750px) {
@@ -455,6 +465,7 @@ footer {
 
     nav {
         justify-content: center;
+        position: static;
     }
 }
 
