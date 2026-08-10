@@ -1,0 +1,212 @@
+#bp_head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 50px;
+    color: #eee;
+}
+
+.wrap1 {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-wrap-hallelujah {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.wrap-side-hallelujah {
+    width: 30%;
+}
+
+.backlink {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.backlink svg {
+    transition: .1s ease;
+}
+
+.backlink:hover {
+    svg {
+        transform: translateX(-5px);
+    }
+}
+
+.hallelujah-head {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.hallelujah-head h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    padding-bottom: 5px;
+}
+
+.hallelujah-head .hallelujah-author {
+    display: inline-block;
+    font-size: 10px;
+    color: gray;
+}
+
+.hallelujah-head .hallelujah-date {
+    font-size: 10px;
+    color: gray;
+}
+
+.hallelujah-head .hallelujah-time-read {
+    font-size: 10px;
+    color: gray;
+}
+
+.primary-details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hallelujah-details {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.368);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.author-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-info img {
+    width: 30px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.author-id h2 {
+    font-size: 16px;
+}
+
+.author-id {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-id .insta-id {
+    font-size: 10px;
+    color: gray;
+}
+
+.hallelujah-details .icon-holder {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-holder img {
+    width: 20px;
+}
+
+.sub-heading {
+    font-size: 24px; 
+    margin-top: 20px;
+}
+
+.blog-text {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.tags-holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tags-holder .tag {
+    font-size: 11px;
+    padding: 3px 7px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid rgb(79, 79, 79);
+    cursor: pointer;
+    transition: .1s ease;
+    color: white;
+}
+
+.tag:hover {
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+
+.blog-author-name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-author-name img {
+    width: 12px;
+    height: auto;
+}
+
+.tags-holder a{
+    color: black;
+    text-decoration: none;
+}
+
+.wrap-side-hallelujah{
+    padding: 10px;
+    margin-top: 70px;
+}
+
+.wrap-side-hallelujah img {
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.wrap-side-hallelujah .side-image-holder {
+    min-width: 295px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: black;
+}

@@ -1,0 +1,313 @@
+#release-ban-sec {
+    padding: 20px 50px;
+}
+
+.release-banner {
+    position: relative;
+    width: 100%;
+    height: clamp(200px, 28vw, 30px);
+    overflow: hidden;
+    border-radius: 10px;
+    isolation: isolate;
+}
+
+.release-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.089), rgba(0, 0, 0, 0.516)), url(release\ banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 1;
+    z-index: -1;
+}
+
+.upcoming-releases,
+.official-releases,
+.popular-releases {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upcoming-releases h2,
+.official-releases h2,
+.popular-releases h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.release-i {
+    display: inline-flex;
+    width: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 18px;
+    padding: 7px;
+    font-size: 13px;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.release-para-info {
+    max-width: 800px;
+    font-size: 10px;
+    padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.621);
+}
+
+.ur-holder, 
+.or-holder,
+.pr-holder {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 30px;
+    justify-content: start;
+}
+
+.ur-card,
+.or-card {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    max-width: 400px;
+    gap: 20px;
+    background-color: rgb(30, 30, 30);
+    /* box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.158); */
+    padding: 3px 10px;
+    border-radius: 6px;
+    align-items: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.266); */
+    box-shadow:0 4px 18px rgba(0, 0, 0, 0.104);
+    border:none;
+    color: white;
+}
+
+.ur-card-info,
+.or-card-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ur-card-img,
+.or-card-img {
+    flex: 0 0 130px;
+}
+
+.ur-card-img img,
+.or-card-img img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+
+.releas-title {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    width: fit-content;
+    padding-bottom: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.release-type {
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.release-heading {
+    font-size: 10px;
+    color: rgb(153, 152, 152);
+}
+
+.release-date {
+    font-size: 10px;
+    padding-top: 5px;
+    font-weight: 700;
+    color: rgb(153, 152, 152);
+}
+
+.release-label {
+    position: absolute;
+    width: fit-content;
+    padding: 4px 7px;
+    font-size: 9px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 6px 2px 2px 2px;
+}
+
+.release-status {
+    width: fit-content;
+    background-color: transparent;
+    color: rgb(153, 152, 152);
+    border-radius: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-btns {
+    width: 100%;
+    height: auto;   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card-btns .now {
+    padding: 5px 10px;
+    background-color: rgba(88, 88, 88, 0.9);
+    border: 1px solid rgba(88, 88, 88, 0.9);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s ease;
+    font-size: 12px;
+}
+
+.card-btns .now:hover {
+    background-color: rgba(55, 55, 55, 0.9);
+    border: 1px solid rgba(88, 88, 88, 0.9);
+    color: white;
+}
+
+.card-btns .now2 {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid rgba(88, 88, 88, 0.9);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s ease;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-btns a{
+    text-decoration: none;
+}
+
+.now2 svg {
+    width: 12px;
+    height: auto;
+}
+
+.card-btns .now2:hover {
+    background-color: rgba(55, 55, 55, 0.9);
+    border: 1px solid rgba(88, 88, 88, 0.9);
+    color: white;
+}
+
+.release-btn-holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+.release-btn-holder .release-btn-left {
+    display: flex;
+    gap: 10px;
+}
+
+.release-btn-holder a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 6px;
+    transition: .1s ease;
+}
+
+.release-btn-holder a:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+#creator-words {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    color: white;
+    scroll-margin-top: 70px;
+}
+
+.creator-words-container {
+    padding: 0 60px;
+}
+
+.notice-card {
+    margin: 10px 0;
+    padding: 5px 20px;
+    border-left: 3px solid white;
+}
+
+.notice-card h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.notice-card p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.535);
+}
+@media (max-width:1440px){
+    .release-banner{
+        height: 200px;
+    }
+}
+
+@media (max-width:1200px){
+    .release-banner{
+        height: 180px
+    }
+}
+
+@media (max-width:992px){
+    .release-banner{
+        height: 160px
+    }
+}
+
+@media (max-width:768px){
+    .release-banner{
+        height: 140px
+    }
+}
+
+@media (max-width:576px){
+    .release-banner{
+        height: 120px;
+        border-radius:8px;
+    }
+}

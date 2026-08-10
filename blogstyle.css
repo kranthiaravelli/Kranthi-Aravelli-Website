@@ -1,0 +1,244 @@
+#bloghome {
+    width: 100%;
+    height: 200px;
+    padding: 20px 70px;
+    color: white;
+}
+
+.bloghead {
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.bloghead h1{
+    font-size: 28px;
+}
+
+.input-search {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-search input{
+    width: 400px;
+    height: 34px;
+    padding: 10px;
+    border: 1px solid rgb(87, 87, 87);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent;
+    color: white;
+}
+
+.input-search input:focus {
+    outline: none;
+    /* border: 1px solid black; */
+    border-right: none;
+}
+
+.input-search button{
+    border: 1px solid rgb(87, 87, 87);
+    background-color: rgb(87, 87, 87);
+    border-radius: 0 4px 4px 0;
+    color: white;
+    height: 34px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.input-search button:hover{
+    border: 1px solid rgb(87, 87, 87);
+    background-color: rgb(74, 74, 74);
+}
+
+.input-search button:focus {
+    outline: none;
+}
+
+.blogholder-outer {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.blogholder-left {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.blogholder-right {
+    width: 40%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+}
+
+.blogcard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.195);
+}
+
+.blogcard .blog-author {
+    width: 100%;
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    padding-bottom: 3px;
+}
+
+.blogcard .blog-title {
+    width: 100%;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+
+.blogcard .blog-description {
+    width: 100%;
+    display: inline-block;
+    font-size: 11px;
+    color: rgb(61, 61, 61);
+    padding-bottom: 5px;
+}
+
+.blogcard .blog-date {
+    width: 100%;
+    display: inline-block;
+    white-space: pre;
+    font-size: 10px;
+    color: rgb(98, 98, 98);
+}
+
+.blogcard button {
+    width: fit-content;
+    padding: 5px 15px;
+    margin-top: 5px;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.807);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.blogcard a{
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+}
+
+.blogcard button:hover {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.blogcard .blog-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.blogholder-right .blogcategories {
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogcategories .categories-head {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.category-card {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 0;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.category-card .category, .number {
+    color: rgb(168, 166, 166);
+    transition: .2s ease;
+}
+
+.category-card:hover {
+    .category, .number {
+        color: black;
+    }
+}
+
+.category-card-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blogpopular {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-head {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.popular-card-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.popular-card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 10px;
+    border-left: 3px solid black;
+}
+
+.popular-card .post-title {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.popular-card .post-description {
+    font-size: 12px;
+}

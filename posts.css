@@ -1,0 +1,242 @@
+#webposts {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.huge-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.huge-wrap .wp-profile-board {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 00px 20px;
+    gap: 10px;
+}
+
+.wp-profile-card {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: 1px solid rgba(8, 8, 8, 0.138);
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.104);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: rgb(29, 29, 29);
+
+}
+
+.wp-profile-card img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.wp-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.wp-name h3 {
+    font-size: 16px;
+}
+
+.wp-name img {
+    width: 15px;
+}
+
+.wp-profile-card span {
+    font-size: 11px;
+    color: white;
+    margin-top: 2px;
+}
+
+.wp-bio {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wp-profile-card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 7px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.wp-profile-card button:hover {
+    background-color: rgba(0, 0, 0, 0.276);
+}
+
+.wp-profile-card button img {
+    width: 20px;
+    border-radius: 0;
+}
+
+.wp-main-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.wp-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    margin-bottom: 20px;
+}
+
+.post-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.wp-hero-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wp-hero-left h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    color: white;
+}
+
+.wp-hero-left p {
+    font-size: 12px;
+    max-width: 380px;
+    padding-bottom: 25px;
+}
+
+.wp-hero-right {
+    width: 100%;
+    display: flex;
+}
+
+.wp-hero-right .icon-holder{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+.wp-hero-right .icon-holder img {
+    width: 20px;
+}
+
+.post-wrap-right {
+    width: 50%;
+}
+
+.post-container {
+    box-shadow:0 4px 7px rgba(0, 0, 0, 0.104);
+    padding: 15px 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    background-color: rgb(29, 29, 29);
+}
+
+.right-wrap-box {
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.239);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(29, 29, 29);
+
+}
+
+.right-wrap-box h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.right-wrap-box p {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.right-wrap-box button {
+    padding: 5px;
+    font-size: 11px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.right-wrap-box button:hover {
+    background-color: rgb(64, 63, 63);
+    border: 1px solid rgb(64, 63, 63);
+}
+
+.right-wrap-box button svg {
+    width: 15px;
+}
+
+.wp-ad {
+    width: 100%;
+    height: 70px;
+}
+
+.wp-ad img {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.wp-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.post-wrap1 p{
+    margin-top: 5px;
+}
+
+.post-wrap-wp {
+    display: flex;
+    flex-direction: column;
+}
