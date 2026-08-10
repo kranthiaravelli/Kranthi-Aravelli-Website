@@ -19,6 +19,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 * {
     padding: 0;
@@ -29,24 +36,28 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     font-family: 'Amiro';
 }
 nav {
     width: 100%;
-    height: 70px;
-    background-color: #fff;  
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.518);  
+    height: 50px;
+    background-color: #161616;
+    color: #eee;
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.518);   */
+    border-bottom: 1px solid rgb(53, 53, 53);
+    border-radius: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 nav img {
-    width: 70px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -60,9 +71,9 @@ nav .nav-elements ul li {
 
 nav .nav-elements li a{
     padding: 0 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 nav #menu {
@@ -76,6 +87,12 @@ nav #menu {
     display: flex;
     flex-direction: column;
     padding: 30px 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(40, 40, 40));
+}
+
+.active {
+    font-weight: 700;
+    color: #eee;
 }
 
 #highlight::before {
@@ -84,18 +101,19 @@ nav #menu {
     content: "";
     position: absolute;
     inset: 0;
-    background:  url(background_hero.jpg) no-repeat;
+    background: url(Mahonnathamaina-thumbnail.png) no-repeat;
     background-size: cover;
-    background-position-y: -170px;
+    background-position: center;
+    background-position-y: -40px;
     opacity: 0.5;
     z-index: -1;
 }
 
 #highlight h2 {
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: -1px;
     padding-left: 40px;
-    color: black;
+    color: #eee;
 }
 
 .highlight_card {
@@ -109,27 +127,28 @@ nav #menu {
 }
 
 .highlight_card h1 {
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: -2px;
     margin-bottom: 5px;
 }
 
 .highlight_card h1 a{
-    color: black;
+    color: #eee;
     text-decoration: none;
     transition: .2s ease;
 }
 
 .highlight_card p {
-    font-size: 14px;
+    font-size: 12px;
+    color: #eee;
 }
 
 .highlight_card .basic_info button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 11px;
     background-color: black;
-    color: white;
+    color: #eee;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -144,7 +163,7 @@ nav #menu {
     font-size: 12px;
     max-width: 500px;
     margin-top: 20px;
-    color: black;
+    color: #eee;
 }
 
 .highlight_card .status {
@@ -157,9 +176,10 @@ nav #menu {
 }
 
 .highlight_card .status h1 {
-    font-size: 38px;
+    font-size: 32px;
     cursor: pointer;
     text-align: right;
+    color: #eee;
 }
 
 #hero {
@@ -167,7 +187,7 @@ nav #menu {
     height: auto;
     padding: 30px 90px;
     padding-top: 50px;
-    background-color: white; 
+    background-color: rgb(40, 40, 40); 
 }
 
 .main {
@@ -194,8 +214,9 @@ nav #menu {
 #official {
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     padding: 40px 80px;
+    color: #eee;
 }
 
 .main-wrap {
@@ -205,6 +226,8 @@ nav #menu {
 .wrap {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrap h2 {
@@ -236,7 +259,7 @@ nav #menu {
 }
 
 .post-id h3 {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .post-id p {
@@ -246,17 +269,17 @@ nav #menu {
 
 .post-message .date {
     margin-top: 10px;
-    font-size: 12px;
-    color: gray;
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.736);
 }
 
 .post-message {
-    margin-top: 8px;
+    margin-top: 15px;
     max-width: 100%;
 }
 
 .post-message p{
-    font-size: 15px;
+    font-size: 12px;
     white-space: pre-wrap;
 }
 
@@ -277,7 +300,7 @@ nav #menu {
 }
 
 .post-inner-id span {
-    font-size: 10px;
+    font-size: 8px;
     margin-top: 5px;
     color: rgb(0, 72, 255);
     font-weight: 800;
@@ -289,13 +312,19 @@ nav #menu {
 
 .post-links a{
     font-size: 12px;
-    color: black;
+    color: #eee;
     text-decoration: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.post-links a img {
+    width: 20px;
 }
 
 .post-links a:hover {
-    color: rgb(0, 72, 255);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .post-id img {
@@ -327,23 +356,25 @@ nav #menu {
 }
 
 .release-details button {
-    padding: 10px 20px;
-    border-radius: 40px;
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-right: 10px;
+    border-radius: 4px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.866);
-    color: white;
+    background-color: rgba(85, 84, 84, 0.866);
+    color: #eee;
     margin-top: 10px;
     cursor: pointer;
 }
 
 .release-details button:hover {
-    background-color: black;
+    background-color: rgba(74, 73, 73, 0.866);
 }
 
 .title-release .release-description {
     max-width: 700px;
     white-space: pre-wrap;
-    color: rgb(0, 0, 0);
+    color: #eee;
     font-size: 15px;
     line-height: 22px;
 }
@@ -385,7 +416,8 @@ nav #menu {
 
 footer {
     width: 100%;
-    height: 70px;
+    height: auto;
+    bottom: 0;
     
 }
 
@@ -401,7 +433,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #eee;
     font-size: 12px;
     font-weight: 300;
     background-color: black;
@@ -420,23 +452,181 @@ footer {
     text-align: center;
     background-color: rgb(1, 54, 140);
     padding: 3px 0;
-    color: white;
+    color: #eee;
     font-weight: 600;
 }
 
 .seeall {
     width: fit-content;
     padding: 7px 17px;
-    background-color: rgba(0, 0, 0, 0.866);
+    background-color: rgba(85, 84, 84, 0.866);
     border: none;
-    color: white;
+    color: #eee;
     border-radius: 40px;
     cursor: pointer;
     font-size: 12px;
+    margin-top: 10px;
 }
 
 .seeall:hover {
-    background-color: black;
+    background-color: rgba(73, 73, 73, 0.866);
+}
+
+.foot-holder {
+    width: 100%;
+    height: auto;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: #eee;
+}
+
+.foot-holder .foot-up {
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    background-color: transparent;
+}
+
+.foot-up img {
+    width: 90px;
+    opacity: .5;
+}
+
+.foot-low {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.foot-low p {
+    font-size: 10px;
+    opacity: .5;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.icon-holder-foot {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.icon-holder-foot a{
+    color: #eee;
+    text-decoration: none;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.446);
+    transition: .2s ease;
+}
+
+.icon-holder-foot a:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+
+.foot2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 180px;
+}
+
+.foot2 .foot-category {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.foot-category ul {
+    list-style: none;
+}
+
+.foot-category p{
+    font-size: 30px;
+    letter-spacing: -1px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.661);
+}
+
+.foot-category ul li {
+    padding: 2px 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.661);
+}
+
+.foot-category ul li a{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.417);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.foot-category li a:hover{
+    color: #eee;
+}
+
+#section-3 {
+    width: 100%;
+    height: auto;
+}
+
+.section-3-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eee;
+    padding: 40px;
+}
+
+.whatcards-holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.whatcards {
+    min-width: 300px;
+    height: 200px;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatcards h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.whatcards p {
+    font-size: 12px;
+    max-width: 250px;
+    text-align: center;
+    color: rgb(177, 176, 176);
+    margin-bottom: 10px;
 }
 
 @media (max-width: 750px) {
@@ -446,7 +636,7 @@ footer {
 
     nav .nav-elements ul {
         margin-top: 200px;
-        background-color: white;
+        background-color: #eee;
         width: 100%;
     }
 
@@ -529,5 +719,25 @@ footer {
     .main-wrap {
         flex-direction: column;
         gap: 70px;
+    }
+
+    .side-inner .release-details-main img {
+        max-width: 100%;
+    }
+
+    .title-release .release-description {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 830px) {
+    .foot-holder {
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+
+    .foot2 {
+        flex-direction: column;
+        gap: 30px;
     }
 }
